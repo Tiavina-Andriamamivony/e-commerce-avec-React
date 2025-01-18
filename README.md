@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-commerce Website with Next.js 15
 
-## Getting Started
+Modern e-commerce platform built with Next.js 15, Shadcn UI, Framer Motion, Prisma, and PostgreSQL.
 
-First, run the development server:
+## 🚀 Features
 
+- Modern UI with Shadcn components
+- Smooth animations with Framer Motion
+- Type-safe database operations with Prisma
+- PostgreSQL database
+- Server and Client Components
+- Server Actions for data mutations
+- Responsive design
+- Cart management
+- Product catalog
+- Order management
+
+## 📋 Prerequisites
+
+- Node.js 18+
+- PostgreSQL
+- npm or pnpm
+
+## 🛠️ Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/ecommerce-next
+cd ecommerce-next
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables:
+```bash
+cp .env.example .env
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Configure your `.env` file:
+```
+DATABASE_URL="postgresql://user:password@localhost:5432/dbname"
+NEXT_PUBLIC_API_URL="http://localhost:3000"
+```
 
-## Learn More
+5. Initialize Prisma:
+```bash
+npx prisma generate
+npx prisma db push
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. Run the development server:
+```bash
+npm run dev
+```
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework:** Next.js 15
+- **Styling:** Tailwind CSS + Shadcn UI
+- **Animation:** Framer Motion
+- **Database:** PostgreSQL
+- **ORM:** Prisma
+- **State Management:** Zustand
+- **Authentication:** NextAuth.js
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💻 Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Commands
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build production bundle
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code with Prettier
+
+### Database Management
+
+```bash
+# Generate Prisma Client
+npx prisma generate
+
+# Push database changes
+npx prisma db push
+
+# Open Prisma Studio
+npx prisma studio
+```
+
+## 🚀 Deployment
+
+1. Create a Vercel account
+2. Connect your repository
+3. Set up environment variables
+4. Deploy!
+
+## 📝 License
+
+Tiavina.co
+
+## 👥 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push to branch
+5. Open a Pull Request
